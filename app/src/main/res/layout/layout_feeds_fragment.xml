@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <me.kaelaela.verticalviewpager.VerticalViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/vertical_viewpager_feeds_fragment"/>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_barWidth="3dp"
+        android:layout_gravity="center"
+        app:matProg_barColor="@color/white"
+        android:id="@+id/pw_feeds_fragment"/>
+</FrameLayout>

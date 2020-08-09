@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/tv_label_photo_in"
+                android:text="New attachment recieved"/>
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:src="@color/divider"
+                android:layout_below="@+id/tv_label_photo_in"
+                android:padding="5dp"
+                android:id="@+id/iv_layout_photo_in"/>
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:layout_width="@dimen/progress_wheel_big"
+                android:layout_height="@dimen/progress_wheel_big"
+                android:layout_centerInParent="true"
+                app:matProg_progressIndeterminate="true"
+                app:matProg_barWidth="2dp"
+                android:id="@+id/pw_photo_in"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

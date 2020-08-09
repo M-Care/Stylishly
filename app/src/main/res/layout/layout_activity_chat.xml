@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_edt_container_activity_chat">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_chats_activity_chat"/>
+    </FrameLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_edt_container_activity_chat">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp">
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/btn_add_photo_activity_chat">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    app:materialIcon="image"
+                    app:materialIconColor="@color/primary_light" />
+            </FrameLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="Start Typing..."
+                android:textSize="18sp"
+                android:id="@+id/edt_chat_activity_chat"
+                android:layout_toRightOf="@+id/btn_add_photo_activity_chat"
+                android:layout_toEndOf="@+id/btn_add_photo_activity_chat"
+                android:layout_toLeftOf="@+id/btn_send_message_activity_chat"
+                android:layout_toStartOf="@+id/btn_send_message_activity_chat"/>
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_send_message_activity_chat">
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    app:materialIcon="send"
+                    app:materialIconColor="@color/primary_light" />
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

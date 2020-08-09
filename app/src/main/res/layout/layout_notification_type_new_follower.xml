@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@color/divider"
+        android:id="@+id/iv_user_new_follower_notification_item"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_user_new_follower_notification_item"
+        android:layout_toEndOf="@+id/iv_user_new_follower_notification_item"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/layout_message_container_new_follower_notification_item"
+        android:orientation="vertical">
+        <com.hendraanggrian.widget.SocialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aduraline started following you"
+            android:id="@+id/tv_notification_message_new_follower_item"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 minutes ago"
+            android:textSize="12sp"
+            android:id="@+id/tv_time_new_follower_notification_item"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/divider_curve"
+        android:layout_below="@+id/iv_user_new_follower_notification_item"/>
+</RelativeLayout>
